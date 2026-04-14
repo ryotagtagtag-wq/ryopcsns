@@ -1,38 +1,38 @@
-# ryopcsns - AI-Powered Safety SNS Hub
+# ryopcsns - High-Performance AI-Integrated SNS Hub
 ### Developer: game_ryo
 
 ---
 
 ## 日本語 プロジェクト概要
-ryopcsnsは、掲示板、リアルタイムチャット、画像ブログを統合したSNS集合体です。Cloudflareのエコシステムを活用し、AIと保護者が連携してユーザーを保護する次世代型の安全なSNSを目指しています。
+ryopcsnsは、掲示板、リアルタイムチャット、ブログ機能を統合した次世代型SNSプラットフォームです。子供から大人まで全世代が安全に使用できるよう、CloudflareのインフラとAI技術を組み合わせた高度なセキュリティと利便性を両立しています。
 
 ### 主な機能
-- SNSポータル: 掲示板・チャット・ブログの各機能への統合エントリーポイント。
-- AI検閲 (Hugging Face): 全投稿をリアルタイムでスキャンし、不適切なコンテンツを自動的に制限。
-- AI対話 (Groq/Llama 3): 高速推論による応答。同時に背後で深刻度判定フラグ（0-2）を算出し記録。
-- 保護者管理システム: 
-  - アカウント紐付け: 親のメール承認プロセスを経ることでアカウントを有効化。
-  - 緊急停止機能: 保護者からのメールをAIが解析し、停止要請を検知した場合は即座にアカウントをロック。
-  - 安全度レポート: 過去の活動データからAIが安定度スコアを算出し、保護者用画面へ提示。
+- 統合ポータル: 掲示板・チャット・ブログの各機能へシームレスにアクセス。
+- AIコンテンツ保護 (Hugging Face): 全投稿をAIがリアルタイム監視。誹謗中傷や荒らし行為を自動で抑制。
+- 爆速AIチャット (Groq/Llama 3): 高速レスポンスによる高度な対話体験を提供。
+- セキュリティ・リンクシステム: 
+  - 二段階承認プロセス: 登録時のメール認証による確実な本人確認。
+  - 緊急リモートロック: 端末紛失やアカウント乗っ取り時、登録メールからAI経由の指示で即座にアカウントを保護。
+  - 活動ログ分析: AIが利用状況を分析し、ユーザーの安全なデジタルライフをサポート。
 
 ---
 
 ## English Project Overview
-ryopcsns is an all-in-one SNS hub integrating forums, real-time chat, and image blogs. Leveraging the Cloudflare ecosystem, it aims to be a next-generation safe SNS where AI and parents collaborate to protect users.
+ryopcsns is a high-performance SNS hub integrating forums, real-time chat, and blogs. Designed for users of all ages, it combines Cloudflare’s infrastructure with cutting-edge AI to deliver a secure and seamless social experience.
 
 ### Key Features
-- SNS Portal: Centralized entry point for Forum, Chat, and Blog modules.
-- AI Content Moderation (Hugging Face): Real-time scanning and automatic restriction of inappropriate content.
-- AI Interaction (Groq/Llama 3): High-speed inference for user support with background gravity scoring (0-2).
-- Parental Control System:
-  - Account Linkage: Registration requires parental approval via email verification.
-  - Emergency Stop Trigger: AI parses parental emails to detect lock requests and freezes accounts instantly.
-  - Safety Score: AI-driven analysis of activity to provide a stability report on the parent dashboard.
+- Centralized Portal: Seamless access to forums, chat rooms, and blog modules.
+- AI Content Protection (Hugging Face): Real-time AI monitoring to mitigate harassment and ensure a healthy community environment.
+- Ultra-Fast AI Interaction (Groq/Llama 3): Powered by Groq for instantaneous and sophisticated conversational experiences.
+- Advanced Security Linkage:
+  - Two-Step Verification: Reliable identity confirmation via email during the registration process.
+  - Emergency Remote Lock: Instantly freeze accounts via AI-parsed email commands in case of device theft or account compromise.
+  - Activity Analysis: AI-driven insights to maintain user safety and digital well-being.
 
 ---
 
 ## Technology Stack
-- Frontend: Cloudflare Pages / HTML / CSS (Glassmorphism UI) / JavaScript
+- Frontend: Cloudflare Pages / HTML / CSS (Modern Glassmorphism UI) / JavaScript
 - Backend: Cloudflare Workers
 - Database: Cloudflare D1 (Database name: snsdb)
 - Media Storage: Cloudinary
